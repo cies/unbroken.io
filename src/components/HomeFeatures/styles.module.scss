@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+
+.columns {
+  @include mobileonly {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @include touchonly {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.column {
+  @include mobileonly {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &:not(:first-child) {
+      border-bottom: 1px solid #e3dfda;
+      margin: 0 20px;
+    }
+  }
+
+  @include touchonly {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &:not(:first-child) {
+      border-bottom: 1px solid #e3dfda;
+      margin: 0 20px;
+    }
+  }
+}
+
+.heading {
+  font-family: $gtamerica;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #191919;
+}
+
+.subheading {
+  font-size: 20px;
+  line-height: 26px;
+  color: #191919;
+  opacity: 0.37;
+  margin-top: 5px;
+}
+
+.icon {
+  height: 55px;
+  width: 55px;
+  margin: 10px 0;
+}
+
+.features {
+  padding: 50px 0;
+
+  @include mobileonly {
+    padding: 35px 0 50px;
+  }
+}

@@ -1,0 +1,73 @@
+// The animation lib from node_modules
+@import "~animate.css/animate.min.css";
+
+// flags lib from node_modules
+@import "~flag-icon-css/css/flag-icon.min.css";
+
+// The @font-face statements
+@import "../fonts/fonts.css";
+
+// Our variables (colors, fonts and breakpoints)
+@import "../styles/variables.scss";
+
+// The Bulma lib from node_modules
+@import "~bulma/bulma.sass";
+
+.navbar {
+  &.is-transparent {
+    background-color: transparent;
+    background-image: none;
+  }
+}
+
+a {
+  text-decoration: none; /* no underline */
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.columns {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body:after {
+  @include tabletAndAbove {
+    content: "private beta";
+    position: fixed;
+    width: 180px;
+    height: 25px;
+    background: #ee8e4a;
+    top: 30px;
+    left: -40px;
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    line-height: 27px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  @include mobileonly {
+    content: "private beta";
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    background: #ee8e4a;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    line-height: 27px;
+  }
+}

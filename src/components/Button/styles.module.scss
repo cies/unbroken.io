@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-family: $gtamerica;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  &:focus-within {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.withBackground {
+  background-color: $orange;
+  color: $white;
+
+  &:hover {
+    background-color: $darkBlue;
+  }
+}
+
+.withoutBackground {
+  background-color: transparent;
+  color: $black;
+  border: 1px solid $black;
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+    border: 1px solid transparent;
+  }
+
+  @include mobileonly {
+    background-color: rgba(243, 129, 176, 0.3);
+  }
+}
+
+.medium {
+  padding: 16px 45px;
+}
+
+.large {
+  padding: 16px 90px;
+}
+
+.fullWidth {
+  padding: 16px 90px;
+  display: block;
+  width: 100%;
+}

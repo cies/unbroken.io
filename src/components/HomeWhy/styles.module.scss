@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.why {
+  background: $white;
+  padding: 0 15px 100px;
+  @include mobileonly {
+    padding: 0 15px 100px;
+  }
+}
+
+.heading {
+  font-family: $mabry;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 54px;
+  color: $black;
+  margin: 230px 0 100px;
+
+  @include mobileonly {
+    margin: 30px 0;
+    font-size: 45px;
+    line-height: 49px;
+  }
+}
+
+.whyItemSubHeading {
+  color: $black;
+  font-family: $gtamerica;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.whyItemHeading {
+  font-family: $mabry;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  color: $black;
+
+  @include mobileonly {
+    margin-bottom: 10px;
+  }
+}
+
+.whyItem {
+  padding-right: 3rem;
+  margin: 15px 0;
+}
+
+.mobileImage {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  @include mobileonly {
+    width: 100%;
+    margin-top: 40px;
+  }
+}

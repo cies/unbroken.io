@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  background-color: $black;
+  padding: 70px 0 80px;
+
+  @include mobileonly {
+    padding: 70px 20px 80px;
+  }
+}
+
+.logo {
+  @include mobileonly {
+    margin: 25px;
+  }
+}
+
+.itemsHeading {
+  color: $white;
+  font-family: $mabry;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.link {
+  font-family: $gtamerica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: $white;
+
+  &:hover {
+    color: $white;
+    opacity: 0.8;
+    border-bottom: 2px solid $white;
+    width: max-content;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+
+  @include mobileonly {
+    margin-top: 0;
+  }
+}
+
+.footerItem {
+  @include mobileonly {
+    flex: 1 1 50% !important;
+  }
+}

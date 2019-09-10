@@ -1,0 +1,48 @@
+$tabletWidth: 768px;
+$desktopWidth: 1024px;
+$mobileWidth: 480px;
+
+@mixin desktopAndAbove {
+  @media (min-width: #{ $desktopWidth }) {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media only screen and (-o-min-device-pixel-ratio: 2 / 1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin tabletAndAbove {
+  @media (min-width: #{ $tabletWidth }) {
+    @content;
+  }
+}
+
+@mixin tabletOnly {
+  @media (min-width: #{ $tabletWidth }) and (max-width: #{ $desktopWidth - 1px }) {
+    @content;
+  }
+}
+
+@mixin touchonly {
+  @media (max-width: #{ $tabletWidth }) {
+    @content;
+  }
+}
+
+@mixin mobileonly {
+  @media (max-width: #{ $mobileWidth }) {
+    @content;
+  }
+}

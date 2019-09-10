@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.header {
+  background-color: $extraLightOrange;
+  padding: 45px 0 65px;
+
+  @include mobileonly {
+    padding: 15px 0 65px;
+  }
+}
+
+.heading {
+  font-family: $mabry;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 71px;
+  text-align: center;
+  color: $black;
+  margin: 0 auto;
+  padding-top: 70px;
+  max-width: 600px;
+
+  @include mobileonly {
+    font-size: 40px;
+    line-height: 45px;
+    padding-top: 40px;
+  }
+}
