@@ -1,6 +1,6 @@
 # unbroken.io — website code
 
-This is a [Gatsby](https://www.gatsbyjs.org) (static site with React) project, based off of [gatsby-starter-default-i18n](https://github.com/angeloocana/gatsby-plugin-i18n/tree/master/packages/gatsby-starter-default-i18n). [Bulma](https://bulma.io) is the flexbox-based CSS framework used.
+This is a [Gatsby](https://www.gatsbyjs.org) (static site with React) project, based off of [gatsby-starter-default-i18n](https://github.com/angeloocana/gatsby-plugin-i18n/tree/master/packages/gatsby-starter-default-i18n). [Bulma](https://bulma.io) is the flexbox-based CSS framework used. See `package.json` for further dependencies.
 
 
 ### Get going
