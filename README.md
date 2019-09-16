@@ -22,6 +22,8 @@ This is a [Gatsby](https://www.gatsbyjs.org) (static site with React) project, b
 
 * When `yarn start` errors out with `This dependency was not found`, you should probably sync dependencies by simply running `yarn`.
 
+* When `yarn start1 errors with `These relative modules were not found` followed by some font files, and `ERROR in ./src/fonts/fonts.css` followed by `Module not found: Error: Can't resolve`, then you have likely not unzipped the fonts.
+
 
 ### TODOs
 
